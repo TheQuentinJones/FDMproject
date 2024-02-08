@@ -29,24 +29,7 @@
             <li class="nav-item">
               <a class="nav-link" href="./updateAccount.html">Update Account</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -58,7 +41,7 @@
   <section class="new_account_form container" style="height: 100vh;">
     <form class="input-group mb-3">
       <label class="input-group-text" for="inputGroupSelect01">Type of Account</label>
-      <select class="form-select mr-2" id="inputGroupSelect01">
+      <select class="form-select mr-2" id="inputGroupSelect01" required>
         <option selected>Choose...</option>
         <option value="1">Checking</option>
         <option value="2">Savings</option>
@@ -67,8 +50,9 @@
 
       <label class="input-group-text ml-1" for="dollarAmount">Starting Balance</label>
       <input type="number" class="form-control" id="dollarAmount" min="0" step="0.01" pattern="^\d+(\.\d{1,2})?$"
-        title="Enter a valid dollar amount (e.g., 10.99)">
-
+        title="Enter a valid dollar amount (e.g., 10.99)" required>
+      <br>
+      <br>
       <button class="form-button btn btn-primary" type="submit">Create Account</button>
     </form>
   </section>

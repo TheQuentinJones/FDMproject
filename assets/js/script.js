@@ -1,6 +1,6 @@
 const buttonSubmit = (e) => {
     e.preventDefault()
-    try {
+    try {        
     let a = document.getElementById("inputGroupSelect01")
     let b = document.getElementById("dollarAmount")
     let x = a.value
